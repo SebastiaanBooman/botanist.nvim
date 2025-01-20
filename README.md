@@ -1,8 +1,9 @@
 # botanist.nvim
-An integrated plant UML diagram viewer and file exporter for Neovim. Leverages auto-reload to enable seamless diagram development.
+An integrated Plant UML diagram viewer and file exporter for Neovim. Leverages auto-reload to enable seamless diagram development.
 
+![Showcase](https://github.com/user-attachments/assets/54318a47-6adb-49b5-9553-adfdea3d2f71)
 ## Overview
-The objective for this plugin was to create a highly integrated Plant UML diagram viewer and exported for Neovim. With the default options, a new diagram viewer (feh process) is started whenever a Plant UML file is opened. Control is immediately returned to the terminal so you may start editing right away (this works quite scuffed as discussed in ##Caveats). When switching buffers or leaving NeoVim, the diagram viewer is terminated.
+The objective for this plugin was to create a highly integrated Plant UML diagram viewer and exporter for Neovim. With the default options, a new diagram viewer (feh process) is started whenever a Plant UML file is opened. Control is immediately returned to the terminal so you may start editing right away (this works quite scuffed as discussed in ##Caveats). When switching buffers or leaving Neovim, the diagram viewer is terminated.
 
 ## Dependencies
 ### Required
@@ -12,7 +13,6 @@ The objective for this plugin was to create a highly integrated Plant UML diagra
 
 ### Optional
 - wmctrl: used to refocus the last Neovim instance after opening a diagram with feh.
-Currently this plugin heavily relies on feh for its functionality.
 
 ## Installation 
 `Lazy`
@@ -47,7 +47,7 @@ Currently this plugin heavily relies on feh for its functionality.
 ```
 
 ## Usage
-While the default setup is designed to work without additional configuration (except for setting the optional settings), the following APIs are exposed that can also beused.
+While the default setup is designed to work without additional configuration (except for setting the optional settings), the following APIs are exposed that can also be used.
 |command|explanation|
 |---|---|
 :StartDiagramViewer|Starts a feh process with the output image of the current Plant UML file
